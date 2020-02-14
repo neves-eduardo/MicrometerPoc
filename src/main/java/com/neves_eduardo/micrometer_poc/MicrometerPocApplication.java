@@ -13,15 +13,10 @@ public class MicrometerPocApplication {
         ApplicationContext ac = SpringApplication.run(MicrometerPocApplication.class, args);
         MeterRegistry meterRegistry = ((MeterRegistry) ac.getBean("meterRegistry"));
         while(true){
-            System.out.println(meterRegistry.find("message.counter").counters().size());
-            System.out.println(meterRegistry.find("total.characters.gauge").gauge().value());
+            System.out.println("Message Counters Meters: " + meterRegistry.find("message.counter").counters().size());
+            System.out.println("Total Number of Characters of all messages Gauge :" + meterRegistry.find("total.characters.gauge").gauge().value());
             Thread.sleep(10000);
         }
-//        messageCustomMetric.CounterMessage(new Message(1,"afkaeiojfiega"));
-//        messageCustomMetric.CounterMessage(new Message(2,"afkaeiojfiega"));
-//        messageCustomMetric.CounterMessage(new Message(3,"afkaeiojfiega"));
-//        MeterRegistry meterRegistry = (MeterRegistry) ac.getBean("meterRegistry");
-//        System.out.println(meterRegistry.find("Messages").counters());
     }
 
 }
