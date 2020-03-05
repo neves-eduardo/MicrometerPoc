@@ -1,5 +1,7 @@
-package com.neves_eduardo.micrometer_poc;
+package com.neves_eduardo.micrometer_poc.control;
 
+import com.neves_eduardo.micrometer_poc.metrics.MessageCustomMetric;
+import com.neves_eduardo.micrometer_poc.dto.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

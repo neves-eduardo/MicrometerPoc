@@ -1,5 +1,6 @@
-package com.neves_eduardo.micrometer_poc;
+package com.neves_eduardo.micrometer_poc.metrics;
 
+import com.neves_eduardo.micrometer_poc.dto.Message;
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.MeterRegistry;
 import org.springframework.beans.factory.annotation.Autowired;

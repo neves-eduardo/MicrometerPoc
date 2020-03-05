@@ -1,4 +1,4 @@
-package com.neves_eduardo.micrometer_poc;
+package com.neves_eduardo.micrometer_poc.config;
 
 
 import io.micrometer.core.instrument.MeterRegistry;
