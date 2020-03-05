@@ -30,7 +30,7 @@ public class MessageControl {
         message.setId(idIterator);
         messages.add(message);
         idIterator++;
-        messageCustomMetric.CounterMessage(message);
+        messageCustomMetric.counterMessage(message);
         messageCustomMetric.addToTotalChars(message.getText().length());
         return ResponseEntity.status(HttpStatus.CREATED).body(message);
     }

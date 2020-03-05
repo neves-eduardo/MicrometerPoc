@@ -20,7 +20,7 @@ public class MessageCustomMetric {
     }
 
 
-    public void CounterMessage(Message message) {
+    public void counterMessage(Message message) {
         Counter.builder("message.counter").tag("id", String.valueOf(message.getId())).register(meterRegistry).increment(1);
 
     }
