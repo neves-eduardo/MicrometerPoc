@@ -1,4 +1,10 @@
 # MicrometerPoc
+
+## Running 
+1) Setup the Influxdb docker-compose using:
+	> docker-compose up  
+2)docker run -d --name=grafana -p 3000:3000 grafana/grafana
+
 Simple Poc using micrometer basic functionalities.
 Send a POST request to the localhost:8080/message URI with a JSON body like this:
 
@@ -7,3 +13,4 @@ Send a POST request to the localhost:8080/message URI with a JSON body like this
 }
 
 Micrometer will register meters for each message sent, and the total number of characters of all the messages registered and print the metrics in the terminal!
+
